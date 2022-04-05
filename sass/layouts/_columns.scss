@@ -1,0 +1,11 @@
+.layaut-4-column {
+  @include columns($width: 21%);
+}
+
+.layaut-3-column {
+  @include columns($width: 30%);
+}
+
+.layaut-2-column {
+  @include columns($width: 45%);
+}
