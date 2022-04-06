@@ -403,6 +403,11 @@ h5 {
   line-height: 2.6rem;
 }
 
+.block-shadowed {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
 .button {
   padding: 11px 25px 13px;
   font-style: normal;
@@ -504,6 +509,32 @@ h5 {
   background-image: url("../img/icons/clock.svg");
   width: 15px;
   height: 17px;
+}
+
+.tags {
+  display: flex;
+}
+.tags > * {
+  margin-right: 7px;
+}
+
+.tag {
+  border-radius: 90px;
+  padding: 0 14px;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.8rem;
+}
+.tag_selected {
+  background-color: #ff9900;
+  color: #ffffff;
+}
+.tag_bordered {
+  border: 1px solid #d7d7d7;
+}
+.tag_colored {
+  background-color: #f5f5f5;
 }
 
 .wrapper {
@@ -634,6 +665,34 @@ h5 {
 
 .toll__title {
   margin: 0 0 16px;
+}
+
+.strategies {
+  padding: 30px 0;
+}
+
+.strategies__title {
+  margin: 0 0 14px;
+}
+
+.strategies__description {
+  margin: 0 0 24px;
+}
+
+.strategies__tags {
+  margin-bottom: 31px;
+}
+
+.strategy-wrapper > * {
+  margin-bottom: 30px;
+}
+
+.strategy__content {
+  padding: 24px 33px 26px;
+}
+
+.strategy__name {
+  margin: 0 0 29px;
 }
 
 /*# sourceMappingURL=style.css.map */
