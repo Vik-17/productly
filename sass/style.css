@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -337,7 +338,10 @@ template {
   display: none;
 }
 
-section, main, footer, article {
+section,
+main,
+footer,
+article {
   display: block;
 }
 
@@ -345,7 +349,19 @@ section, main, footer, article {
   box-sizing: border-box;
 }
 
-.navigation__link, .logo-path {
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+
+ul {
+  margin-left: 0;
+  /* Отступ слева в браузере IE и Opera */
+  padding-left: 0;
+  /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.navigation__link, .footer-navigation__links a, .logo-path {
   transition: all 0.3s ease-in-out;
 }
 
@@ -353,7 +369,7 @@ section, main, footer, article {
   font-family: "Open Sans", Verdana, sans-serif;
 }
 
-.promo__text, .link-button, h1 {
+.promo__text, .footer-navigation__links, .link-button, h1 {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
@@ -587,6 +603,35 @@ h5 {
 }
 .layaut-2-column > * {
   flex-basis: 48%;
+}
+
+.footer {
+  padding: 60px 0 60px;
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+  padding-left: 152px;
+}
+
+.footer-navigation__title {
+  margin: 0 0 15px;
+}
+
+.footer-navigation__links a {
+  color: #544837;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.5rem;
+  text-decoration: none;
+}
+.footer-navigation__links a:hover {
+  color: #ff9900;
 }
 
 .contact-us {
