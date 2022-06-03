@@ -5,7 +5,7 @@
 .layout-3-column {
   @include columns($width: 30%);
   &:after {
-    content: "";
+    content: '';
     width: 30%;
     display: block;
   }
